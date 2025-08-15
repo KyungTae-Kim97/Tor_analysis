@@ -1,3 +1,14 @@
+# 1. Description
+
+*
+Experiment 1 (EX1): Impact of Geographical Variation on WF Accuracy
+* `same_location` experiment
+* `cross_location` experiment
+* `mixed-location` experiment
+* 
+*
+
+
 ### 1. Clone the repository
 
 ```{shell}
