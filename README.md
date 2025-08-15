@@ -25,7 +25,7 @@ cd EX1
 
 ### 5. Results 
 ```{shell}
-cd result
+cd results
 cd EX1
 vi same_location.txt
 ```
