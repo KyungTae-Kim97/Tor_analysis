@@ -1,0 +1,4 @@
+train is ../dataset/smote_900/South_Korea/125_250702_smote_900.csv
+test is ../dataset/USA2/125_250614.csv
+max accuracy: 0.21633333333333332
+************

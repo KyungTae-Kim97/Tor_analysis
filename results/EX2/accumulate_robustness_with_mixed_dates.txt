@@ -1,0 +1,3 @@
+train1 is ../dataset/smote_900/USA1/125_250614_smote_900.csv
+train2 is ../dataset/smote_900/USA1/125_250620_smote_900.csv
+test is ../dataset/smote_900/USA1/125_250620_smote_900.csv
