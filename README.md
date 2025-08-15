@@ -1,12 +1,17 @@
 # 1. Description
 
-*
-Experiment 1 (EX1): Impact of Geographical Variation on WF Accuracy
+*Experiment 1 (EX1): Impact of Geographical Variation on WF Accuracy*
 * `same_location` experiment
 * `cross_location` experiment
 * `mixed-location` experiment
-* 
-*
+
+*Experiment 2 (EX2): Temporal Drift and Its Effect on Model Performance* 
+* `cross_time` experiment
+* `reverse_cross_time` experiment
+* `accumulate_robustness_with_mixed_data` experiment
+
+*Experiment 3 (EX3): Reexaming Partial-Trace Detection-is 30\% Really Enough?*
+* `accuracy_vs_traffic_percentage` experiment
 
 
 ### 1. Clone the repository
