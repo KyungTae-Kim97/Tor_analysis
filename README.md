@@ -13,7 +13,7 @@
 *Experiment 3 (EX3): Reexaming Partial-Trace Detection-is 30\% Really Enough?*
 * `accuracy_vs_traffic_percentage` experiment
 
-
+# 2. How to implement
 ### 1. Clone the repository
 
 ```{shell}
