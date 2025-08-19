@@ -44,17 +44,17 @@ cat ../results/EX1/mixed_location.txt
 ```{shell}
 cd EX2
 ```
-[1] Cross-Time Validation.
+[1] Cross-Time Validation (table 5)
 ```{shell}
 ./cross_time.sh
 cat ../results/EX2/cross_time.txt
 ```
-[2] Reverse Cross-Time Validation.
+[2] Reverse Cross-Time Validation (table 6)
 ```{shell}
 ./reverse_cross_time.sh
 cat ../results/EX2/reverse_cross_time.txt
 ```
-[3] Accumulate Robustness with Mixed Dates.
+[3] Accumulate Robustness with Mixed Dates (table 7)
 ```{shell}
 ./accumulate_robustness_with_mixed_dates.sh
 cat ../results/EX2/accumulate_robustness_with_mixed_dates.txt
@@ -63,7 +63,7 @@ cat ../results/EX2/accumulate_robustness_with_mixed_dates.txt
 ```{shell}
 cd EX3
 ```
-[1] Accuracy vs Traffic Percentage (Elapsed Time)
+[1] Accuracy vs Traffic Percentage (Elapsed Time) (figure 7)
 ```{shell}
 ./accuracy_vs_traffic_percentage.sh
 cat ../results/EX3/accuracy_vs_traffic_percentage.txt
