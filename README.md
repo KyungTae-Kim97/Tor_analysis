@@ -24,17 +24,17 @@ pip install -r requirements.txt
 ```{shell}
 cd EX1
 ```
-* [1] Baseline: Same-location Training and Testing (table 2)
+[1] Baseline: Same-location Training and Testing (table 2)
 ```{shell}
 ./same_location.sh
 cat ../results/same_location.txt
 ```
-* [2] Cross-location Testing: Train on One Location, Test on Another. (table 3)
+[2] Cross-location Testing: Train on One Location, Test on Another. (table 3)
 ```{shell}
 ./cross_location.sh
 cat ../results/cross_location.txt
 ```
-* [3] Mixed-location Training: Train on Multiple Locations, Test on One (table 4)
+[3] Mixed-location Training: Train on Multiple Locations, Test on One (table 4)
 ```{shell}
 ./mixed_location.sh
 cat ../results/mixed_location.txt
