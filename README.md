@@ -98,6 +98,7 @@ result is in FIGURES/fig_repository folder
 <p align="center">
   <img src="image/figure5.png" width="50%"/>
 </p>
+
 ### 3. Experiment 3 (EX3): Reexaming Partial-Trace Detection-is 30\% Really Enough?
 ```{shell}
 cd ../EX3
@@ -116,7 +117,7 @@ cd ../FIGURES
 result is in FIGURES/fig_repository folder
 ```
 <p align="center">
-  <img src="image/figure6.png"/>
+  <img src="image/figure6.png" width="50%"/>
 </p>
 
 [3] Accuracy vs Traffic Percentage (Elapsed Time) Across Locations (Figure 7)
@@ -126,6 +127,6 @@ result is in FIGURES/fig_repository folder
 result is in FIGURES/fig_repository folder
 ```
 <p align="center">
-  <img src="image/figure7.png"/>
+  <img src="image/figure7.png" width="50%"/>
 </p>
 
