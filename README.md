@@ -5,10 +5,10 @@
 <div align="left">
 
 # 1. Description
-*In this paper, we identify two key problems in the current evaluation methodology of WF attacks: (1) the assumption that models trained in one geographic location and time period generalize well to others, and (2) the claim that only a small portion of webpage load time (e.g., the first 30\%) is sufficient for effective detection. Both assumptions remain largely unverified under realistic Tor conditions.
+*In this paper, we identify two key problems in the current evaluation methodology of WF attacks: (1) the assumption that models trained in one geographic location and time period generalize well to others, and (2) the claim that only a small portion of webpage load time (e.g., the first 30\%) is sufficient for effective detection. Both assumptions remain largely unverified under realistic Tor conditions. &nbsp;
 To address these gaps, we collect real-world Tor traffic—including onion services—from multiple geographic regions and time windows. Using this dataset, we evaluate the robustness of state-of-the-art WF models under shifting spatiotemporal conditions. We also analyze the temporal distribution of packet features to assess the informativeness of partial traffic traces.*
 
-# 1. Pre-setting
+# 2. Pre-setting
 ### 1. Download the repository
 
 ```{shell}
@@ -28,7 +28,7 @@ conda activate tor_analysis
 pip install -r requirements.txt
 ```
 
-# 2. How to run
+# 3. How to run
 
 ### 1. Experiment 1 (EX1): Impact of Geographical Variation on WF Accuracy
 
