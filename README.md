@@ -25,7 +25,7 @@ pip install -r requirements.txt
 cd EX1
 ```
 [1] Baseline: Same-location Training and Testing (Table 2) 
-#### The goal of this study is to evaluate how well the models perform when applied within the same location. To achieve this, we trained and tested the models using data collected from USA1, USA2, and South Korea.
+> The goal of this study is to evaluate how well the models perform when applied within the same location. To achieve this, we trained and tested the models using data collected from USA1, USA2, and South Korea.
 ```{shell}
 ./same_location.sh
 cat ../results/EX1/same_location.txt
