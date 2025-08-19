@@ -21,13 +21,13 @@ pip install -r requirements.txt
 # 2. How to run
 
 ### 1. Experiment 1 (EX1): Impact of Geographical Variation on WF Accuracy
-```{shell}
-cd EX1
-```
+
 [1] Comparison of UMAP projections using 125 features, 140 features, and CUMUL features for traffic data from USA1, USA2, and South Korea (Figure 3)
 > It shows results of whether there are close relations among the three regions, with significant overlap particularly between USA1 and USA2, which are geographically located within the same network domain. 
 ```{shell}
+cd FIGURES
 ./fig3.sh
+results are in FIGURES/fig_repository folder
 ```
 <p align="center">
   <img src="image/125-0-clustering_v10.png" width="30%" />
@@ -38,6 +38,7 @@ cd EX1
 [2] Baseline: Same-location Training and Testing (Table 2) 
 > The goal of this study is to evaluate how well the models perform when applied within the same location. To achieve this, we trained and tested the models using data collected from USA1, USA2, and South Korea.
 ```{shell}
+cd ../EX1
 ./same_location.sh
 cat ../results/EX1/same_location.txt
 ```
@@ -56,7 +57,7 @@ cat ../results/EX1/mixed_location.txt
 
 ### 2. Experiment 2 (EX2): Temporal Drift and Its Effect on Model Performance
 ```{shell}
-cd EX2
+cd ../EX2
 ```
 [1] Cross-Time Validation (Table 5)
 >It shows a detailed analysis of cross-time testing, where models trained on data from Day 1 are tested on data collected after Day 2 and Day 6. The results clearly demonstrate that all feature vectors experience a drop in accuracy over time, highlighting the practical challenge of handling changing data distributions.
@@ -76,15 +77,55 @@ cat ../results/EX2/reverse_cross_time.txt
 ./accumulate_robustness_with_mixed_dates.sh
 cat ../results/EX2/accumulate_robustness_with_mixed_dates.txt
 ```
+[4] Accuracy Over Time (Figure 4)
+>it expands upon the temporal evaluation summarized in Table 5. Across all three geographic locations (USA1,USA2, and South Korea), the results demonstrate a clear pattern of performance degradation over time for every feature vector configuration.
+```{shell}
+cd ../FIGURES
+./fig4.sh
+result is in FIGURES/fig_repository folder
+```
+<p align="center">
+  <img src="image/figure4.png"/>
+</p>
+
+
+[5] Mean Accuracy by Location and Feature Vector (Figure 5)
+>it shows feature vector changes mainly introduce fine-tuning level adjustments, typically resulting in accuracy variations within the 3–4\% range. In contrast, location differences lead to much more substantial shifts in accuracy, driven by larger external factors such as network environment, traffic patterns, and user behavior
+```{shell}
+./fig5.sh
+result is in FIGURES/fig_repository folder
+```
+<p align="center">
+  <img src="image/figure5.png"/>
+</p>
 ### 3. Experiment 3 (EX3): Reexaming Partial-Trace Detection-is 30\% Really Enough?
 ```{shell}
-cd EX3
+cd ../EX3
 ```
-[1] Accuracy vs Traffic Percentage (Elapsed Time) (Figure 7)
+[1] Accuracy vs Traffic Percentage (Elapsed Time)
 >It presents a comparative analysis of the WTCM~\cite{deng2025countmamba} model's accuracy across three locations: USA1, USA2, and South Korea, as a function of traffic percentage observed over time.
 ```{shell}
 ./accuracy_vs_traffic_percentage.sh
 cat ../results/EX3/accuracy_vs_traffic_percentage.txt
 ```
+[2] Cumulative Page Loads over Time by Location (Figure 6)
+>It illustrates the progression of completed page loads across three geographic locations—USA1, USA2, and South Korea—over ten time intervals corresponding to increasing percentages of page load completion, from 10 percent at 12 seconds to 100 percent at 120 seconds.
+```{shell}
+cd ../FIGURES
+./fig6.sh
+result is in FIGURES/fig_repository folder
+```
+<p align="center">
+  <img src="image/figure6.png"/>
+</p>
 
+[3] Accuracy vs Traffic Percentage (Elapsed Time) Across Locations (Figure 7)
+>It reveals that most onion service instances complete their page loading within approximately 36 seconds, with nearly all instances receiving the entirety of their traffic by 48 seconds.
+```{shell}
+./fig7.sh
+result is in FIGURES/fig_repository folder
+```
+<p align="center">
+  <img src="image/figure7.png"/>
+</p>
 
