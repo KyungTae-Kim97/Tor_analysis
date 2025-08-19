@@ -24,17 +24,17 @@ pip install -r requirements.txt
 ```{shell}
 cd EX1
 ```
-[1] Baseline: Same-location Training and Testing (table 2)
+[1] Baseline: Same-location Training and Testing (Table 2)
 ```{shell}
 ./same_location.sh
 cat ../results/EX1/same_location.txt
 ```
-[2] Cross-location Testing: Train on One Location, Test on Another. (table 3)
+[2] Cross-location Testing: Train on One Location, Test on Another. (Table 3)
 ```{shell}
 ./cross_location.sh
 cat ../results/EX1/cross_location.txt
 ```
-[3] Mixed-location Training: Train on Multiple Locations, Test on One (table 4)
+[3] Mixed-location Training: Train on Multiple Locations, Test on One (Table 4)
 ```{shell}
 ./mixed_location.sh
 cat ../results/EX1/mixed_location.txt
@@ -44,17 +44,17 @@ cat ../results/EX1/mixed_location.txt
 ```{shell}
 cd EX2
 ```
-[1] Cross-Time Validation (table 5)
+[1] Cross-Time Validation (Table 5)
 ```{shell}
 ./cross_time.sh
 cat ../results/EX2/cross_time.txt
 ```
-[2] Reverse Cross-Time Validation (table 6)
+[2] Reverse Cross-Time Validation (Table 6)
 ```{shell}
 ./reverse_cross_time.sh
 cat ../results/EX2/reverse_cross_time.txt
 ```
-[3] Accumulate Robustness with Mixed Dates (table 7)
+[3] Accumulate Robustness with Mixed Dates (Table 7)
 ```{shell}
 ./accumulate_robustness_with_mixed_dates.sh
 cat ../results/EX2/accumulate_robustness_with_mixed_dates.txt
@@ -63,7 +63,7 @@ cat ../results/EX2/accumulate_robustness_with_mixed_dates.txt
 ```{shell}
 cd EX3
 ```
-[1] Accuracy vs Traffic Percentage (Elapsed Time) (figure 7)
+[1] Accuracy vs Traffic Percentage (Elapsed Time) (Figure 7)
 ```{shell}
 ./accuracy_vs_traffic_percentage.sh
 cat ../results/EX3/accuracy_vs_traffic_percentage.txt
