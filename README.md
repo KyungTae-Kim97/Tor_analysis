@@ -24,19 +24,25 @@ pip install -r requirements.txt
 ```{shell}
 cd EX1
 ```
-[1] Baseline: Same-location Training and Testing (Table 2) 
+[1] Comparison of UMAP projections using 125 features, 140 features, and CUMUL features for traffic data from USA1, USA2, and South Korea (Figure 3)
+> It shows results of whether there are close relations among the three regions, with significant overlap particularly between USA1 and USA2, which are geographically located within the same network domain. 
+```{shell}
+./fig3.sh
+```
+
+[2] Baseline: Same-location Training and Testing (Table 2) 
 > The goal of this study is to evaluate how well the models perform when applied within the same location. To achieve this, we trained and tested the models using data collected from USA1, USA2, and South Korea.
 ```{shell}
 ./same_location.sh
 cat ../results/EX1/same_location.txt
 ```
-[2] Cross-location Testing: Train on One Location, Test on Another. (Table 3)
+[3] Cross-location Testing: Train on One Location, Test on Another. (Table 3)
 >The goal of this experiment is to evaluate how the model performs when applied to data from a different location, thereby assessing its generalizability across regions. To achieve this, the model is trained on data from one location, such as USA1, and then tested on data from another locations, such as USA2 and South Korea. Various combinations of training and testing locations are considered to comprehensively analyze the impact of geographic differences on model performance.
 ```{shell}
 ./cross_location.sh
 cat ../results/EX1/cross_location.txt
 ```
-[3] Mixed-location Training: Train on Multiple Locations, Test on One (Table 4)
+[4] Mixed-location Training: Train on Multiple Locations, Test on One (Table 4)
 >The goal of this experiment is to investigate whether model performance can be improved by incorporating training data from mixed locations, thus potentially enhancing generalizability. In this setting, the model is trained using data combined from multiple sources, such as USA1 and USA2, and then evaluated on a separate location (e.g., South Korea) or across all three locations. This approach aims to leverage diverse data distributions during training to mitigate the impact of domain shifts and improve robustness when deployed in different geographic contexts.
 ```{shell}
 ./mixed_location.sh
