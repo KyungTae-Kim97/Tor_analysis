@@ -34,6 +34,7 @@ cd EX1
   <img src="image/140-0-clustering_v10.png" width="30%" />
   <img src="image/cumul-0-clustering_v10.png" width="30%" />
 </p>
+
 [2] Baseline: Same-location Training and Testing (Table 2) 
 > The goal of this study is to evaluate how well the models perform when applied within the same location. To achieve this, we trained and tested the models using data collected from USA1, USA2, and South Korea.
 ```{shell}
