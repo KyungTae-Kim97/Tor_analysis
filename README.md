@@ -31,11 +31,13 @@ cd EX1
 cat ../results/EX1/same_location.txt
 ```
 [2] Cross-location Testing: Train on One Location, Test on Another. (Table 3)
+>The goal of this experiment is to evaluate how the model performs when applied to data from a different location, thereby assessing its generalizability across regions. To achieve this, the model is trained on data from one location, such as USA1, and then tested on data from another locations, such as USA2 and South Korea. Various combinations of training and testing locations are considered to comprehensively analyze the impact of geographic differences on model performance.
 ```{shell}
 ./cross_location.sh
 cat ../results/EX1/cross_location.txt
 ```
 [3] Mixed-location Training: Train on Multiple Locations, Test on One (Table 4)
+>The goal of this experiment is to investigate whether model performance can be improved by incorporating training data from mixed locations, thus potentially enhancing generalizability. In this setting, the model is trained using data combined from multiple sources, such as USA1 and USA2, and then evaluated on a separate location (e.g., South Korea) or across all three locations. This approach aims to leverage diverse data distributions during training to mitigate the impact of domain shifts and improve robustness when deployed in different geographic contexts.
 ```{shell}
 ./mixed_location.sh
 cat ../results/EX1/mixed_location.txt
@@ -46,16 +48,19 @@ cat ../results/EX1/mixed_location.txt
 cd EX2
 ```
 [1] Cross-Time Validation (Table 5)
+>It shows a detailed analysis of cross-time testing, where models trained on data from Day 1 are tested on data collected after Day 2 and Day 6. The results clearly demonstrate that all feature vectors experience a drop in accuracy over time, highlighting the practical challenge of handling changing data distributions.
 ```{shell}
 ./cross_time.sh
 cat ../results/EX2/cross_time.txt
 ```
 [2] Reverse Cross-Time Validation (Table 6)
+>It presents a detailed analysis of reverse cross-time testing, where models are trained on data from Day 6 and evaluated on data collected on Days 6, 2, and 1 across different locations.
 ```{shell}
 ./reverse_cross_time.sh
 cat ../results/EX2/reverse_cross_time.txt
 ```
 [3] Accumulate Robustness with Mixed Dates (Table 7)
+>It shows how training with different temporal combinations, specifically Day 1 plus Day 6 compared to Day 2 plus Day 6, helps the model accumulate temporal knowledge and affects the final testing accuracy evaluated on Week 2 (Day 6).
 ```{shell}
 ./accumulate_robustness_with_mixed_dates.sh
 cat ../results/EX2/accumulate_robustness_with_mixed_dates.txt
@@ -65,6 +70,7 @@ cat ../results/EX2/accumulate_robustness_with_mixed_dates.txt
 cd EX3
 ```
 [1] Accuracy vs Traffic Percentage (Elapsed Time) (Figure 7)
+>It presents a comparative analysis of the WTCM~\cite{deng2025countmamba} model's accuracy across three locations: USA1, USA2, and South Korea, as a function of traffic percentage observed over time.
 ```{shell}
 ./accuracy_vs_traffic_percentage.sh
 cat ../results/EX3/accuracy_vs_traffic_percentage.txt
