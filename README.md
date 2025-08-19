@@ -55,6 +55,7 @@ cat ../results/EX1/cross_location.txt
 cat ../results/EX1/mixed_location.txt
 ```
 &nbsp;
+
 ### 2. Experiment 2 (EX2): Temporal Drift and Its Effect on Model Performance
 ```{shell}
 cd ../EX2
@@ -99,6 +100,7 @@ result is in FIGURES/fig_repository folder
   <img src="image/figure5.png" width="50%"/>
 </p>
 &nbsp;
+
 ### 3. Experiment 3 (EX3): Reexaming Partial-Trace Detection-is 30\% Really Enough?
 ```{shell}
 cd ../EX3
