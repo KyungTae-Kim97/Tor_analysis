@@ -90,7 +90,7 @@ cat ../results/EX2/reverse_cross_time.txt
 cat ../results/EX2/accumulate_robustness_with_mixed_dates.txt
 ```
 [4] Accuracy Over Time (Figure 4)
->it expands upon the temporal evaluation summarized in Table 5. Across all three geographic locations (USA1,USA2, and South Korea), the results demonstrate a clear pattern of performance degradation over time for every feature vector configuration.
+>It expands upon the temporal evaluation summarized in Table 5. Across all three geographic locations (USA1,USA2, and South Korea), the results demonstrate a clear pattern of performance degradation over time for every feature vector configuration.
 ```{shell}
 cd ../FIGURES
 ./fig4.sh
@@ -102,7 +102,7 @@ result is in FIGURES/fig_repository folder
 
 
 [5] Mean Accuracy by Location and Feature Vector (Figure 5)
->it shows feature vector changes mainly introduce fine-tuning level adjustments, typically resulting in accuracy variations within the 3–4\% range. In contrast, location differences lead to much more substantial shifts in accuracy, driven by larger external factors such as network environment, traffic patterns, and user behavior
+>It shows feature vector changes mainly introduce fine-tuning level adjustments, typically resulting in accuracy variations within the 3–4\% range. In contrast, location differences lead to much more substantial shifts in accuracy, driven by larger external factors such as network environment, traffic patterns, and user behavior
 ```{shell}
 ./fig5.sh
 result is in FIGURES/fig_repository folder
