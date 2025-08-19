@@ -97,7 +97,7 @@ result is in FIGURES/fig_repository folder
 result is in FIGURES/fig_repository folder
 ```
 <p align="center">
-  <img src="image/figure5.png" width="50%"/>
+  <img src="image/figure5.png" width="50%" height="80%"/>
 </p>
 &nbsp;
 
