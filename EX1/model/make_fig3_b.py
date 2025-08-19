@@ -6,7 +6,7 @@ import umap
 import os
 
 # 1. CSV file
-filename = "140-0-clustering.csv"
+filename = "model/140-0-clustering.csv"
 
 # 2. CSV file reading
 data = pd.read_csv(filename, delimiter=",")  # or sep="\t"
