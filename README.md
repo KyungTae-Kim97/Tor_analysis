@@ -96,7 +96,7 @@ result is in FIGURES/fig_repository folder
 result is in FIGURES/fig_repository folder
 ```
 <p align="center">
-  <img src="image/figure5.png"/>
+  <img src="image/figure5.png" width="50%"/>
 </p>
 ### 3. Experiment 3 (EX3): Reexaming Partial-Trace Detection-is 30\% Really Enough?
 ```{shell}
