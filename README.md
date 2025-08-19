@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 # 2. How to run
 
-*Experiment 1 (EX1): Impact of Geographical Variation on WF Accuracy*
+### 1.Experiment 1 (EX1): Impact of Geographical Variation on WF Accuracy
 ```{shell}
 cd EX1
 ```
