@@ -21,6 +21,8 @@ download it at the top right of the site
 ```{shell}
 conda create -n tor_analysis python=3.12
 conda activate tor_analysis
+conda install anaconda::cudnn
+conda install tensorflow
 ```
 
 ### 3. Install requirements 
