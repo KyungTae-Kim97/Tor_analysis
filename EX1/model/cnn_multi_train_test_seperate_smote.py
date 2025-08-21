@@ -1,7 +1,7 @@
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Dropout, BatchNormalization
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.utils import to_categorical
+from keras.models import Sequential
+from keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Dropout, BatchNormalization
+from keras.optimizers import Adam
+from keras.utils import to_categorical
 import sys
 from sklearn.metrics import confusion_matrix
 import tensorflow as tf
